@@ -1,0 +1,44 @@
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-weight: 400;
+  background-color: var(--bgc-main-color);
+  color: var(--main-text-color);
+  margin: 0 auto;
+  max-width: 1600px;
+}
+.item:nth-child(n) {
+  margin-bottom: 0px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: var(--bgc-main-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

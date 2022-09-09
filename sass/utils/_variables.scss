@@ -1,0 +1,31 @@
+/* Селекторы, их ранги:
+- Универссальный *
+- Тег p
+- клас .header-link
+- Атрибута [href]
+- ID #text
+- Дети .header > a
+- Потомки .header a
+- сосед .header+a
+- все соседи ниже .header~.header
+- .header.link - именно один класс с родителя
+----------------------------------------------------*/
+/*НАША палитра:
+- основной цвет #212121
+- вторичный цвет #757575
+- вторичный цвет фона белый #F5F4FA
+- вторичный цвет фона черный #2F303A
+- белый #FFFFFF
+- бекграунд акцент #2196F3 */
+
+:root {
+  --main-text-color: #212121;
+  --link-hover-color: #2196f3;
+  --bgc-main-color: #ffffff;
+  --bcg-secondary-color: #2f303a;
+  --secondary-text-clor: #757575;
+  --text-color-white: #ffffff;
+  --work-border-color: 1px solid #eeeeee;
+  --header-border: 1px solid #ececec;
+  --main-icons-color: #afb1b8;
+}
