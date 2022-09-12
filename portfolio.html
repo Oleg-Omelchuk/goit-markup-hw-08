@@ -16,21 +16,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
     <!--Шапка сайта-->
-   <!-- <header>
+   <header>
       <div class="conteiner">
         <nav class="nav-conteiner">
           <a href="" class="logo link">Web<span class="logo__text--black logo">Studio</span> </a>
           <ul class="site-nav list">
             <li class="site-nav__item item">
-              <a href="./index.html" class="site-nav__link link">Студия</a>
+              <a href="./index.html" class="site-nav__link  link">Студия</a>
             </li>
             <li class="site-nav__item item">
-              <a href="./portfolio.html" class="site-nav__link link site-nav__link--current">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфолио</a>
             </li>
             <li class="site-nav__item item"><a href="" class="site-nav__link link">Контакты</a></li>
           </ul>
@@ -53,8 +53,73 @@
             </a>
           </li>
         </ul>
+        <button class="menu-button" type="button" data-menu-open>
+          <svg
+            class="menu-button__icon"
+            width="40"
+            height="40"
+          >
+            <use class="menu-button__icon--menu" href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <!-- MOBILE MENU_________________________________________ -->
+      <!-- <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-conteiner">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg
+                class="menu-button__icon"
+                width="40"
+                height="40">
+                <use class="menu-button__icon--close" href="./images/icons.svg#close_menu"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu__navigation">
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item item">
+                  <a href="./index.html" class="mob-menu__link mob-menu__link--current link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-menu__item item">
+                  <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                </li>
+                <li class="mob-menu__item item">
+                  <a href="" class="mob-menu__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="menu-thumb">
+            <ul class="menu-contact list">
+              <li class="menu-contact__item">
+                <a class="menu-contact__link link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+              </li>
+              <li class="menu-contact__item">
+                <a class="menu-contact__link link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-social list">
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Instagram</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Twitter</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">Facebook</a>
+              </li>
+              <li class="menu-social__item">
+                <a class="menu-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+    </header>
     <main>
       <!-- WORK -->
       <section class="work section section">

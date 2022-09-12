@@ -157,9 +157,26 @@ header {
   border-bottom: var(--header-border);
 }
 header .conteiner {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
   display: flex;
   align-items: center;
-  margin: 0;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  header .conteiner {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .conteiner {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .nav-conteiner {
@@ -202,6 +219,12 @@ header .conteiner {
 .site-nav {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
 
 .site-nav__item {
   position: relative;
@@ -210,8 +233,42 @@ header .conteiner {
   margin-right: 50px;
 }
 
-.contact__link {
-  display: none;
+@media screen and (min-width: 480px) {
+  .contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact__link {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__link {
+    color: var(--secondary-text-clor);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .contact__link:hover, .contact__link:focus {
+    color: var(--link-hover-color);
+  }
 }
 
 .site-nav__link--current {
@@ -230,41 +287,53 @@ header .conteiner {
   bottom: -1px;
 }
 
-.mob-menu .conteiner {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-right: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .conteiner {
-    width: 480px;
-  }
-}
 .menu-button {
   margin-left: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .mob-menu {
   position: fixed;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
-  z-index: 1;
+}
+.mob-menu > .mob-conteiner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu > .mob-conteiner {
+    width: 480px;
+  }
 }
 
 .menu-close {
   display: block;
   margin-left: auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: none;
+  cursor: pointer;
+}
+
+.menu-close:hover .menu-button__icon--close {
+  fill: #2196f3;
 }
 
 .mob-menu__list .mob-menu__link--current {
@@ -301,6 +370,13 @@ header .conteiner {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-contact__link:hover {
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .menu-social {
@@ -329,7 +405,7 @@ header .conteiner {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .logo {
@@ -344,6 +420,11 @@ header .conteiner {
   padding-bottom: 16px;
   margin: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 87px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -794,6 +875,11 @@ header .conteiner {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-logo {
+  margin: 0;
+  padding: 0;
+}
+
 .general {
   display: flex;
   flex-direction: column;
@@ -804,9 +890,10 @@ header .conteiner {
 }
 @media screen and (min-width: 1200px) {
   .general {
-    display: block;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     margin-right: 65px;
-    margin-bottom: 0;
   }
 }
 
@@ -839,6 +926,7 @@ header .conteiner {
 .logo__text--white {
   margin-right: 0px;
   color: #ffffff;
+  padding: 0;
 }
 
 .footer {
@@ -900,6 +988,11 @@ header .conteiner {
   margin: 0 auto;
   width: 206px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .soc {
+    justify-content: flex-start;
+  }
 }
 @media screen and (min-width: 1200px) {
   .soc {
@@ -1073,14 +1166,24 @@ header .conteiner {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1) rotate 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0) rotate(-180deg);
@@ -1265,6 +1368,20 @@ header .conteiner {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
 }
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 .check-text .span-check {
   width: 16px;
   height: 15px;
@@ -1298,6 +1415,20 @@ header .conteiner {
 .policy-text {
   text-decoration: underline;
   color: var(--link-hover-color);
+}
+@media screen and (min-width: 480px) {
+  .policy-text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .modal-button {
@@ -1386,7 +1517,7 @@ header .conteiner {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .work-item {
@@ -1469,7 +1600,7 @@ header .conteiner {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 322px;
   height: 168px;
 }

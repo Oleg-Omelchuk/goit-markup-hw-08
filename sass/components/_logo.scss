@@ -6,11 +6,13 @@
   letter-spacing: 0.03em;
   color: #2196f3;
   display: inline-block;
-  // margin-right: 90px;
   padding-top: 16px;
   padding-bottom: 16px;
   margin: 0;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px){
+margin-right: 87px;
+  }
   @media screen and (min-width: 1200px){
     font-size: 26px;
   line-height: 1.19;

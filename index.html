@@ -50,16 +50,9 @@
             </a>
           </li>
         </ul>
-        <button
-          class="menu-open is-open"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu__container"
-          data-menu-button
-        >
+        <button class="menu-button" type="button" data-menu-open>
           <svg
             class="menu-button__icon"
-            aria-label="Перемикач мобільного меню"
             width="40"
             height="40"
           >
@@ -68,31 +61,33 @@
         </button>
       </div>
       <!-- MOBILE MENU_________________________________________ -->
-      <div class="mob-menu">
-        <div class="conteiner">
-          <button type="button" class="menu-close">
-            <svg
-              class="menu-button__icon"
-              aria-label="Перемикач мобільного меню"
-              width="40"
-              height="40"
-            >
-              <use class="menu-button__icon--close" href="./images/icons.svg#close_menu"></use>
-            </svg>
-          </button>
-          <nav class="mob-menu__navigation">
-            <ul class="mob-menu__list list">
-              <li class="mob-menu__item item">
-                <a href="./index.html" class="mob-menu__link mob-menu__link--current link">Студия</a>
-              </li>
-              <li class="mob-menu__item item">
-                <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
-              </li>
-              <li class="mob-menu__item item">
-                <a href="" class="mob-menu__link link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+      <!-- <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-conteiner">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close" data-menu-close>
+              <svg
+                class="menu-button__icon"
+                width="40"
+                height="40">
+                <use class="menu-button__icon--close" href="./images/icons.svg#close_menu"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu__navigation">
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item item">
+                  <a href="./index.html" class="mob-menu__link mob-menu__link--current link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-menu__item item">
+                  <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                </li>
+                <li class="mob-menu__item item">
+                  <a href="" class="mob-menu__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
           <div class="menu-thumb">
             <ul class="menu-contact list">
               <li class="menu-contact__item">
@@ -120,7 +115,7 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
     </header>
     <main>
       <!--Блок с заголовком-->
@@ -488,14 +483,13 @@
       </div>
     </footer>
     <!-- Backdro--------------------------------------------- -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close type="button" class="modal-close">
           <svg class="modal-icon" width="18" height="18">
             <use href="./images/icons.svg#close-modal"></use>
-          </svg> -->
-    <!-- <img src="./images/close.svg" alt="close" width="30" height="30" /> -->
-    <!-- </button>
+          </svg>
+        </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form action="#" class="modal-form">
           <div class="label-input">
@@ -591,6 +585,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
-  </body>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+      </body>
 </html>
