@@ -30,7 +30,7 @@
               <a href="./index.html" class="site-nav__link link">Студия</a>
             </li>
             <li class="site-nav__item item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link"
+              <a href="./portfolio.html" class="site-nav__link link site-nav__link--current"
                 >Портфолио</a
               >
             </li>
@@ -55,33 +55,30 @@
             </a>
           </li>
         </ul>
-        <button class="menu-button" type="button" data-menu-open>
+        <button class="menu-button is-open" type="button" data-menu-open>
           <svg class="menu-button__icon" width="40" height="40">
             <use class="menu-button__icon--menu" href="./images/icons.svg#menu"></use>
           </svg>
         </button>
       </div>
       <!-- MOBILE MENU_________________________________________ -->
-      <!-- <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu is-hidden" data-menu>
         <div class="mob-conteiner">
           <div class="mob-menu-top">
-            <button type="button" class="menu-close" data-menu-close>
-              <svg
-                class="menu-button__icon"
-                width="40"
-                height="40">
+            <button type="button" class="menu-close is-hidden" data-menu-close>
+              <svg class="menu-button__icon" width="40" height="40">
                 <use class="menu-button__icon--close" href="./images/icons.svg#close_menu"></use>
               </svg>
             </button>
             <nav class="mob-menu__navigation">
               <ul class="mob-menu__list list">
                 <li class="mob-menu__item item">
-                  <a href="./index.html" class="mob-menu__link  link"
-                    >Студия</a
-                  >
+                  <a href="./index.html" class="mob-menu__link link">Студия</a>
                 </li>
                 <li class="mob-menu__item item">
-                  <a href="./portfolio.html" class="mob-menu__link mob-menu__link--current link">Портфолио</a>
+                  <a href="./portfolio.html" class="mob-menu__link link mob-menu__link--current"
+                    >Портфолио</a
+                  >
                 </li>
                 <li class="mob-menu__item item">
                   <a href="" class="mob-menu__link link">Контакты</a>
@@ -116,7 +113,7 @@
             </ul>
           </div>
         </div>
-      </div> -->
+      </div>
     </header>
     <main>
       <!-- WORK -->
@@ -628,7 +625,7 @@
         </form>
       </div>
     </footer>
-
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

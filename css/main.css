@@ -294,11 +294,17 @@ header .conteiner {
   border: none;
   cursor: pointer;
   padding: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
+}
+
+.menu-button.is-open:hover,
+.menu-button.is-open:focus {
+  fill: var(--link-hover-color);
 }
 
 .mob-menu {
@@ -311,6 +317,12 @@ header .conteiner {
   height: 100vh;
   padding-top: 10px;
   padding-bottom: 48px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 900px) {
+  .mob-menu {
+    display: none;
+  }
 }
 .mob-menu > .mob-conteiner {
   height: 100%;
@@ -322,6 +334,50 @@ header .conteiner {
 @media screen and (min-width: 480px) {
   .mob-menu > .mob-conteiner {
     width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mob-menu > .mob-conteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0;
+    background-color: transparent;
+    transition: none;
+    position: static;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 1;
+  }
+}
+
+.mob-menu.is-open {
+  transform: translateX(0);
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu.is-open {
+    transform: none;
+    transition: none;
+  }
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu.is-hidden .mob-menu {
+  transform: translateX(100%);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu.is-hidden .mob-menu {
+    transform: none;
   }
 }
 
@@ -1590,6 +1646,11 @@ header .conteiner {
 @media screen and (min-width: 768px) {
   .subtext {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subtext {
+    width: 370px;
   }
 }
 
