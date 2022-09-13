@@ -894,7 +894,6 @@ header .conteiner {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-right: 65px;
   }
 }
 
