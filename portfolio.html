@@ -17,20 +17,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!--Шапка сайта-->
-   <header>
+    <header>
       <div class="conteiner">
         <nav class="nav-conteiner">
           <a href="" class="logo link">Web<span class="logo__text--black logo">Studio</span> </a>
           <ul class="site-nav list">
             <li class="site-nav__item item">
-              <a href="./index.html" class="site-nav__link  link">Студия</a>
+              <a href="./index.html" class="site-nav__link link">Студия</a>
             </li>
             <li class="site-nav__item item">
-              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current link"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item item"><a href="" class="site-nav__link link">Контакты</a></li>
           </ul>
@@ -54,11 +56,7 @@
           </li>
         </ul>
         <button class="menu-button" type="button" data-menu-open>
-          <svg
-            class="menu-button__icon"
-            width="40"
-            height="40"
-          >
+          <svg class="menu-button__icon" width="40" height="40">
             <use class="menu-button__icon--menu" href="./images/icons.svg#menu"></use>
           </svg>
         </button>
@@ -139,13 +137,37 @@
           <ul class="work-list list">
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/tehno.jpg"
-                  alt="технокряк"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex1.jpg    1x,
+                      ./images/desktop-img/work-ex1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex1.jpg    1x,
+                      ./images/tablet-img/work-ex1@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex1.jpg    1x,
+                      ./images/mobile-img/work-ex1@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/tehno.jpg"
+                    alt="технокряк"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="work-border">
                   <h3 class="work-pre-title">Технокряк</h3>
                   <p class="work-text">Веб-сайт</p>
@@ -161,13 +183,37 @@
             </li>
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/New-Orlean.jpg"
-                  alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex2.jpg    1x,
+                      ./images/desktop-img/work-ex2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex2.jpg    1x,
+                      ./images/tablet-img/work-ex2@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex2.jpg    1x,
+                      ./images/mobile-img/work-ex2@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/New-Orlean.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="work-border">
                   <h3 class="work-pre-title">Постер New Orlean vs Golden Star</h3>
                   <p class="work-text">Дизайн</p>
@@ -183,13 +229,37 @@
             </li>
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/Seafood.jpg"
-                  alt="Ресторан Seafood"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex3.jpg    1x,
+                      ./images/desktop-img/work-ex3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex3.jpg    1x,
+                      ./images/tablet-img/work-ex3@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex3.jpg    1x,
+                      ./images/mobile-img/work-ex3@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/Seafood.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="work-border">
                   <h3 class="work-pre-title">Ресторан Seafood</h3>
                   <p class="work-text">Приложение</p>
@@ -205,13 +275,37 @@
             </li>
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/Prime.jpg"
-                  alt="Проект Prime"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex4.jpg    1x,
+                      ./images/desktop-img/work-ex4@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex4.jpg    1x,
+                      ./images/tablet-img/work-ex4@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex4.jpg    1x,
+                      ./images/mobile-img/work-ex4@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/Prime.jpg"
+                    alt="Проект Prime"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="work-border">
                   <h3 class="work-pre-title">Проект Prime</h3>
                   <p class="work-text">Маркетинг</p>
@@ -227,13 +321,37 @@
             </li>
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/Boxes.jpg"
-                  alt="Проект Boxes"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex5.jpg    1x,
+                      ./images/desktop-img/work-ex5@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex5.jpg    1x,
+                      ./images/tablet-img/work-ex5@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex5.jpg    1x,
+                      ./images/mobile-img/work-ex5@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/Boxes.jpg"
+                    alt="Проект Boxes"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="work-border">
                   <h3 class="work-pre-title">Проект Boxes</h3>
                   <p class="work-text">Приложение</p>
@@ -249,13 +367,36 @@
             </li>
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/Inspiration.jpg"
-                  alt="Inspiration has no Borders"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex6.jpg    1x,
+                      ./images/desktop-img/work-ex6@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex6.jpg    1x,
+                      ./images/tablet-img/work-ex6@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex6.jpg    1x,
+                      ./images/mobile-img/work-ex6@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/Inspiration.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
 
                 <div class="work-border">
                   <h3 class="work-pre-title">Inspiration has no Borders</h3>
@@ -272,13 +413,37 @@
             </li>
             <li class="work-item">
               <a class="work-link link" href="./portfolio.html">
-                <img
-                  class="work-img"
-                  src="./images/Limited-Edition.jpg"
-                  alt="Издание Limited Edition"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex7.jpg    1x,
+                      ./images/desktop-img/work-ex7@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex7.jpg    1x,
+                      ./images/tablet-img/work-ex7@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex7.jpg    1x,
+                      ./images/mobile-img/work-ex7@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/Limited-Edition.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <div class="work-border">
                   <h3 class="work-pre-title">Издание Limited Edition</h3>
                   <p class="work-text">Дизайн</p>
@@ -293,14 +458,37 @@
               </a>
             </li>
             <li class="work-item">
-              <a class="work-link link" href="./portfolio.html"
-                ><img
-                  class="work-img"
-                  src="./images/LAB.jpg"
-                  alt="Проект LAB"
-                  width="370"
-                  height="294"
-                />
+              <a class="work-link link" href="./portfolio.html">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex8.jpg    1x,
+                      ./images/desktop-img/work-ex8@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex8.jpg    1x,
+                      ./images/tablet-img/work-ex8@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex8.jpg    1x,
+                      ./images/mobile-img/work-ex8@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/LAB.jpg"
+                    alt="Проект LAB"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="work-border">
                   <h3 class="work-pre-title">Проект LAB</h3>
                   <p class="work-text">Маркетинг</p>
@@ -315,14 +503,37 @@
               </a>
             </li>
             <li class="work-item">
-              <a class="work-link link" href="./portfolio.html"
-                ><img
-                  class="work-img"
-                  src="./images/Growing-Business.jpg"
-                  alt="Growing Business"
-                  width="370"
-                  height="294"
-                />
+              <a class="work-link link" href="./portfolio.html">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop-img/work-ex9.jpg    1x,
+                      ./images/desktop-img/work-ex9@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-img/work-ex9.jpg    1x,
+                      ./images/tablet-img/work-ex9@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-img/work-ex9.jpg    1x,
+                      ./images/mobile-img/work-ex9@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    class="work-img"
+                    src="./images/Growing-Business.jpg"
+                    alt="Growing Business"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="work-border">
                   <h3 class="work-pre-title">Growing Business</h3>
                   <p class="work-text">Приложение</p>
