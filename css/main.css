@@ -606,6 +606,9 @@ header .conteiner {
   width: 200px;
   height: 50px;
 }
+.hero__button:hover {
+  background-color: #188CE8;
+}
 
 .about {
   background-color: var(--bgc-main-color);
@@ -1202,6 +1205,9 @@ header .conteiner {
   padding-left: 28px;
   cursor: pointer;
 }
+.online-btn:hover {
+  background-color: #188CE8;
+}
 
 .online-icon {
   margin-left: 10px;
@@ -1511,6 +1517,9 @@ header .conteiner {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+}
+.modal-button:hover {
+  background-color: #188CE8;
 }
 
 .work {

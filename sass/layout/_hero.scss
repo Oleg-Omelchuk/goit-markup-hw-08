@@ -81,5 +81,8 @@
     border: 1px solid transparent;
     width: 200px;
     height: 50px;
+    &:hover {
+      background-color: #188CE8;
+    }
   }
 }
