@@ -286,6 +286,11 @@ header .conteiner {
   background-color: var(--link-hover-color);
   bottom: -1px;
 }
+@media screen and (min-width: 768px) {
+  .site-nav__link--current::after {
+    bottom: -7px;
+  }
+}
 
 .menu-button {
   display: block;
@@ -319,7 +324,7 @@ header .conteiner {
   padding-bottom: 48px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
@@ -463,6 +468,7 @@ header .conteiner {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  text-decoration: none;
 }
 
 .logo {
@@ -640,7 +646,7 @@ header .conteiner {
   background-image: url(../images/astronaut.png);
 }
 .about__item:nth-child(n) {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .about__item {
@@ -1477,6 +1483,7 @@ header .conteiner {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-left: 3px;
   }
 }
 @media screen and (min-width: 1200px) {
