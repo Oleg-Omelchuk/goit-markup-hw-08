@@ -956,9 +956,10 @@ header .conteiner {
 }
 @media screen and (min-width: 1200px) {
   .general {
-    display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
